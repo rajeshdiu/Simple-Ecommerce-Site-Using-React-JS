@@ -1,0 +1,87 @@
+/* General Styling */
+.about {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+.intro, .story, .vision, .mission {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 20px 0;
+}
+
+.team {
+  margin-top: 50px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 90%;
+  }
+}
